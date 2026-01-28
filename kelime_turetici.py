@@ -45,7 +45,7 @@ def check_password():
 
 # Şifre doğruysa ana uygulama başlar
 if check_password():
-    st.title("📝 Kelime Türetici & Puanlayıcı")
+    st.title("📝 Kelimelik")
 
     # Kelimelik Resmi Harf Puan Tablosu
     PUAN_TABLOSU = {
@@ -89,4 +89,5 @@ if check_password():
                 with c1: st.write(f"**{kelime.upper()}**")
                 with c2: st.write(f"🏆 {puan}")
         else:
+
             st.warning("Uygun kelime bulunamadı.")
